@@ -1,8 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiVisualstudiocode } from "react-icons/si";
-import { SiMysql } from "react-icons/si";
+import { SiVisualstudiocode, SiMysql } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
+import { DiDjango } from "react-icons/di";
 
 function Toolstack() {
   return (
@@ -12,6 +12,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={1} className="tech-icons" title="MySQL">
         <SiMysql title="MySQL"/>
+      </Col>
+      <Col xs={4} md={1} className="tech-icons" title="Django">
+        <DiDjango title="Django"/>
       </Col>
       <Col xs={4} md={1} className="tech-icons" title="GitHub">
         <FaGithub title="GitHub"/>

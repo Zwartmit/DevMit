@@ -14,10 +14,8 @@ function Home({ translations }) {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                {translations.greeting}{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
+                {translations.greeting}
+                <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>{" "}
                 {translations.welcomeMessage}
               </h1>
 
@@ -30,13 +28,13 @@ function Home({ translations }) {
                 <Type translations={translations} />
               </div>
             </Col>
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingTop: 20, paddingLeft: 20 }}>
               <img
                 src={myImg}
                 alt="home pic"
                 className="img-fluid"
                 style={{
-                  maxHeight: "397px",
+                  maxHeight: "360px",
                   borderRadius: "100%",
                   boxShadow: "0 0 100px black",
                   border: "5px solid rgb(0, 0, 0)",

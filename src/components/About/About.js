@@ -19,7 +19,7 @@ function About({ translations }) {
             <Aboutcard translations={translations} />
           </Col>
           <Col md={5} style={{ paddingTop: "100px", paddingBottom: "50px" }} className="about-img">
-            <img src={about} alt="about" className="img-fluid" style={{borderRadius: "100%", boxShadow: "0 0 100px black", border: "5px solid rgb(0, 0, 0)", outline: "8px solid rgba(4, 4, 4, 0.35)" }}/>
+            <img src={about} alt="about" className="img-fluid" style={{borderRadius: "100%", boxShadow: "0 0 100px black", border: "5px solid rgb(0, 0, 0)", outline: "8px solid rgba(4, 4, 4, 0.35)", height: "400px", width: "400px" }}/>
           </Col>
         </Row>
         <h1 className="project-heading">
