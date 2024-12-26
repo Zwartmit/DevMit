@@ -43,7 +43,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home translations={translations[language]} />} />
           <Route path="/proyectos" element={<Projects translations={translations[language]} />} />
-          <Route path="/sobre_mi" element={<About translations={translations[language]} />} />
+          <Route path="/sobre-mi" element={<About translations={translations[language]} />} />
           <Route path="/cv" element={<Resume translations={translations[language]} />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
