@@ -41,13 +41,13 @@ function NavBar({ toggleLanguage, language }) {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/sobre_mi" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}>
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> {language === "es" ? "Sobre mí" : "About Me"}
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/proyectos" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/projects" onClick={() => updateExpanded(false)}>
                 <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> {language === "es" ? "Proyectos" : "Projects"}
               </Nav.Link>
             </Nav.Item>
