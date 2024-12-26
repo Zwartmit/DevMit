@@ -10,9 +10,7 @@ function ProjectCards(props) {
       <Card.Body>
         <Card.Title style={{ fontWeight: "bold" }}>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}></Card.Text>
-        <Card.Text style={{ textAlign: "center" }}>
-          {props.description}
-        </Card.Text>
+        <Card.Text style={{ textAlign: "center" }}>{props.description}</Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}

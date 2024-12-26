@@ -11,28 +11,50 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const translations = {
+  en: {
+    home: "Home",
+    projects: "Projects",
+    about: "About Me",
+    resume: "Resume",
+  },
+  es: {
+    home: "Inicio",
+    projects: "Proyectos",
+    about: "Sobre mí",
+    resume: "Currículum",
+  }
+};
+
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, updateLoad] = useState(true);
+  const [language, setLanguage] = useState(localStorage.getItem("language") || "en");
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false);
+      updateLoad(false);
     }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
 
+  const toggleLanguage = () => {
+    const newLanguage = language === "en" ? "es" : "en";
+    setLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage);
+  };
+
   return (
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
+        <Navbar toggleLanguage={toggleLanguage} language={language} />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/" element={<Home translations={translations[language]} />} />
+          <Route path="/proyectos" element={<Projects translations={translations[language]} />} />
+          <Route path="/sobre_mi" element={<About translations={translations[language]} />} />
+          <Route path="/cv" element={<Resume translations={translations[language]} />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
       </div>

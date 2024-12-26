@@ -12,7 +12,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          Trabajos <strong> recientes </strong>
+          Proyectos <strong> recientes </strong>
         </h1>
         <p style={{ color: "white" }}>
           Estos son algunos de los proyectos que he realizado y participado.
@@ -35,7 +35,7 @@ function Projects() {
               isBlog={false}
               title="Kardex"
               description="Kardex es un aplicativo usado para la gestión y control de inventario, permitiendo llevar registro de los elementos que se entregan a los aprendices del centro de formación SENA Centro Minero."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              ghLink="https://github.com/Zwartmit/Kardex_SENA_CM.git"
               demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
@@ -46,7 +46,7 @@ function Projects() {
               isBlog={false}
               title="PSEEP"
               description="El aplicativo PSEEP tiene como objetivo llevar control y seguimiento de la etapa productiva de los aprendices del centro de formación SENA Centro Minero, brindando una interfaz intuitiva y eficaz para que los aprendices reporten las actividades realizadas en la empresa donde se encuentran realizando su etapa productiva, permite el cargue de bitácoras y mantener informado al instructor de seguimiento asignado."
-              ghLink="https://github.com/soumyajit4419/Editor.io"
+              ghLink="hthttps://github.com/Zwartmit/PSEEP_CM.git"
               demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>

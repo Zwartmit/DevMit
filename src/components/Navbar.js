@@ -3,11 +3,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser, } from "react-icons/ai";
-
+import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 
-function NavBar() {
+function NavBar({ toggleLanguage, language }) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -36,26 +35,32 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Inicio
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {language === "es" ? "Inicio" : "Home"}
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}>
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Sobre mi
+              <Nav.Link as={Link} to="/sobre_mi" onClick={() => updateExpanded(false)}>
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {language === "es" ? "Sobre mí" : "About Me"}
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}>
-                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }}/>{" "}
-                Proyectos
+              <Nav.Link as={Link} to="/proyectos" onClick={() => updateExpanded(false)}>
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> {language === "es" ? "Proyectos" : "Projects"}
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)}>
-                <CgFileDocument style={{ marginBottom: "2px" }} /> CV
+              <Nav.Link as={Link} to="/cv" onClick={() => updateExpanded(false)}>
+                <CgFileDocument style={{ marginBottom: "2px" }} /> {language === "es" ? "Currículum" : "Resume"}
+              </Nav.Link>
+            </Nav.Item>
+
+            {/* Botón de cambio de idioma */}
+            <Nav.Item>
+              <Nav.Link onClick={toggleLanguage}>
+                {language === "es" ? "EN" : "ES"}
               </Nav.Link>
             </Nav.Item>
           </Nav>
