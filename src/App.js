@@ -7,24 +7,10 @@ import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/ResumeNew";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import translations from "./utils/translations";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-const translations = {
-  en: {
-    home: "Home",
-    projects: "Projects",
-    about: "About Me",
-    resume: "Resume",
-  },
-  es: {
-    home: "Inicio",
-    projects: "Proyectos",
-    about: "Sobre mí",
-    resume: "Currículum",
-  }
-};
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -37,6 +23,10 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
+  
+  useEffect(() => {
+    document.title = translations[language].title;
+  }, [language]);
 
   const toggleLanguage = () => {
     const newLanguage = language === "en" ? "es" : "en";

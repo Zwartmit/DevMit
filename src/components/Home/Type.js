@@ -1,14 +1,14 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-function Type() {
+function Type({ translations }) {
   return (
     <Typewriter
       options={{
         strings: [
-          "Desarrollador de software",
-          "Diseñador y animador digital",
-          "Freelancer",
+          translations.softwareDeveloper,
+          translations.digitalDesigner,
+          translations.freelancer,
         ],
         autoStart: true,
         loop: true,

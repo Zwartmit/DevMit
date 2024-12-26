@@ -1,39 +1,36 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { SiPioneerdj, } from "react-icons/si";
+import { SiPioneerdj } from "react-icons/si";
 import { TbRoad } from "react-icons/tb";
 import { FaBookOpen } from "react-icons/fa";
 
-function AboutCard() {
+function AboutCard({ translations }) {
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Actualmente soy aprendiz <b>SENA</b>, estoy cursando la tecnología en análisis y desarrollo de software.
+            {translations.aboutText1}
+            <b>SENA</b>, {translations.aboutText2}
             <br />
-            Me apasiona la tecnologia y la programación. Mi enfoque es combinar tecnología y creatividad
-            para desarrollar soluciones innovadoras que se adapten a las necesidades de cada proyecto. Como
-            desarrollador, me especializo en la creación de aplicaciones multiplataforma
-            modernas y eficientes. <br />Además, tengo
-            un profundo interés por el modelado y la animación digital. He
-            trabajado en la creación de modelos 3D, el diseño de logos, entre otras cosas.
+            {translations.aboutText3}
+            <br /> {translations.aboutText4}
             <br />
             <br />
-            Tambien me apasiona...
+            {translations.aboutText5}
           </p>
           <ul>
             <li className="about-activity">
-              <SiPioneerdj /> Djing&nbsp;&nbsp;&nbsp;
-              <TbRoad /> Viajar&nbsp;&nbsp;&nbsp;
-              <FaBookOpen /> Leer
+              <SiPioneerdj /> {translations.hobby1}&nbsp;&nbsp;&nbsp;
+              <TbRoad /> {translations.hobby2}&nbsp;&nbsp;&nbsp;
+              <FaBookOpen /> {translations.hobby3}
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "El límite no es el cielo, es el ataúd"{" "}
+            {translations.quote}
           </p>
-          <footer className="blockquote-footer">Métricas Frías</footer>
+          <footer className="blockquote-footer">{translations.quoteAuthor}</footer>
         </blockquote>
       </Card.Body>
     </Card>

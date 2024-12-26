@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import { AiOutlineGlobal } from "react-icons/ai"; // Icono añadido
 
 function NavBar({ toggleLanguage, language }) {
   const [expand, updateExpanded] = useState(false);
@@ -57,9 +58,9 @@ function NavBar({ toggleLanguage, language }) {
               </Nav.Link>
             </Nav.Item>
 
-            {/* Botón de cambio de idioma */}
             <Nav.Item>
               <Nav.Link onClick={toggleLanguage}>
+                <AiOutlineGlobal style={{ marginBottom: "2px", marginRight: "5px" }} />
                 {language === "es" ? "EN" : "ES"}
               </Nav.Link>
             </Nav.Item>
