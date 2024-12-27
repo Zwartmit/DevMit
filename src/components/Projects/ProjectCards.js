@@ -19,10 +19,6 @@ function ProjectCards(props) {
           <Card.Title style={{ fontWeight: "bold" }}>{props.title}</Card.Title>
           <Card.Text style={{ textAlign: "justify" }}>{props.description}</Card.Text>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            {/* <Button variant="primary" href={props.ghLink} target="_blank">
-              <BsGithub /> &nbsp;
-              {props.isBlog ? "Blog" : "GitHub"}
-            </Button>&nbsp;&nbsp; */}
             <Button variant="secondary" onClick={handleShow}>
               <BsSearch />
             </Button>
