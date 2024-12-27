@@ -15,13 +15,13 @@ function Home({ translations }) {
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 {translations.greeting}
-                <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>{" "}
-                {translations.welcomeMessage}
+                <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
+                <br />{translations.welcomeMessage}
               </h1>
 
               <h1 className="heading-name">
                 {translations.iAm}
-                <strong className="main-name"> Brandon Urbano</strong>
+                <strong className="main-name"> Brandon Alonso Urbano Zea</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>

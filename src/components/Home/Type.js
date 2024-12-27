@@ -12,7 +12,8 @@ function Type({ translations }) {
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        delay: 70,
+        deleteSpeed: 90,
       }}
     />
   );
