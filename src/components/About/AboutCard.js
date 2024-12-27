@@ -20,11 +20,11 @@ function AboutCard({ translations }) {
           </p>
           <ul>
             <li className="about-activity">
-            &nbsp;&nbsp;&nbsp;<SiPioneerdj /> {translations.hobby1}
-            &nbsp;&nbsp;&nbsp;<LuScale3D /> {translations.hobby2}
-            &nbsp;&nbsp;&nbsp;<MdDesignServices  /> {translations.hobby3}
-            &nbsp;&nbsp;&nbsp;<TbRoad /> {translations.hobby4}
-            &nbsp;&nbsp;&nbsp;<FaBookOpen /> {translations.hobby5}
+            <SiPioneerdj /> {translations.hobby1}
+            &nbsp;<LuScale3D /> {translations.hobby2}
+            &nbsp;<MdDesignServices  /> {translations.hobby3}
+            &nbsp;<TbRoad /> {translations.hobby4}
+            &nbsp;<FaBookOpen /> {translations.hobby5}
             </li>
           </ul>
           <br />
