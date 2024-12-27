@@ -3,15 +3,16 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import pseep from "../../Assets/Projects/pseep.png";
-import kardex1 from "../../Assets/Projects/kardex1.png";
-import kardex2 from "../../Assets/Projects/kardex2.png";
-import kardex3 from "../../Assets/Projects/image.png";
+import kardex from "../../Assets/Projects/kardex.png";
 import asuan from "../../Assets/Projects/gvi.png";
-import copt1 from "../../Assets/Projects/copt1.jpg";
-import copt2 from "../../Assets/Projects/copt2.jpg";
-import copt3 from "../../Assets/Projects/copt3.jpg";
-import copt4 from "../../Assets/Projects/copt4.jpg";
-import copt5 from "../../Assets/Projects/copt5.jpg";
+import copt from "../../Assets/Projects/COPT1.jpg";
+
+// Importa las imágenes del modal
+import copt1 from "../../Assets/Projects/COPT1.jpg";
+import copt2 from "../../Assets/Projects/COPT2.jpg";
+import copt3 from "../../Assets/Projects/COPT3.jpg";
+import copt4 from "../../Assets/Projects/COPT4.jpg";
+import copt5 from "../../Assets/Projects/COPT5.jpg";
 
 function Projects({ translations }) {
   return (
@@ -23,12 +24,12 @@ function Projects({ translations }) {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={kardex3}
+              imgPath={kardex}
               isBlog={false}
               title={translations.kardexTitle}
               description={translations.kardexDescription}
               ghLink="https://github.com/Zwartmit/Kardex_SENA_CM.git"
-              modalImages={[kardex3, kardex2]}
+              modalImages={[copt1, copt2, copt3]}
             />
           </Col>
 
@@ -39,7 +40,7 @@ function Projects({ translations }) {
               title={translations.pseepTitle}
               description={translations.pseepDescription}
               ghLink="https://github.com/Zwartmit/PSEEP_CM.git"
-              modalImages={[]}
+              modalImages={[copt1, copt2]}
             />
           </Col>
 
@@ -50,13 +51,13 @@ function Projects({ translations }) {
               title={translations.asuanTitle}
               description={translations.asuanDescription}
               ghLink="https://github.com/soumyajit4419/Chatify"
-              modalImages={[]}
+              modalImages={[copt4, copt5]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={copt1}
+              imgPath={copt}
               isBlog={false}
               title={translations.coptTitle}
               description={[
