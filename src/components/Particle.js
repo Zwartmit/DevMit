@@ -28,7 +28,6 @@ function Particle() {
         overflow: "hidden",
       }}
     >
-      {/* Partículas de fondo */}
       <Particles
         id="tsparticles"
         options={{
