@@ -21,7 +21,7 @@ function Home({ translations }) {
 
               <h1 className="heading-name">
                 {translations.iAm}
-                <strong className="main-name"> Brandon Alonso Urbano Zea</strong>
+                <strong className="main-name"> Brandon Urbano</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
