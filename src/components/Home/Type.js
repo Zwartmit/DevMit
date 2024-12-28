@@ -7,7 +7,6 @@ function Type({ translations }) {
       options={{
         strings: [
           translations.softwareDeveloper,
-          translations.digitalDesigner,
           translations.freelancer,
         ],
         autoStart: true,
