@@ -8,7 +8,7 @@ import kardex3 from "../../Assets/Projects/kardex3.png";
 import kardex4 from "../../Assets/Projects/kardex4.png";
 import pseep1 from "../../Assets/Projects/pseep1.png";
 import pseep2 from "../../Assets/Projects/pseep2.png";
-import asuan from "../../Assets/Projects/gvi.png";
+// import asuan from "../../Assets/Projects/gvi.png";
 import copt1 from "../../Assets/Projects/copt1.jpg";
 import copt2 from "../../Assets/Projects/copt2.jpg";
 import copt3 from "../../Assets/Projects/copt3.jpg";
@@ -46,7 +46,7 @@ function Projects({ translations }) {
               modalImages={[pseep1, pseep2]}
             />
           </Col>
-
+{/* 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={asuan}
@@ -57,7 +57,7 @@ function Projects({ translations }) {
               ghLink="https://github.com/soumyajit4419/Chatify"
               modalImages={[]}
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
