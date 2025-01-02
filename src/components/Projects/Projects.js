@@ -8,7 +8,11 @@ import kardex3 from "../../Assets/Projects/kardex3.png";
 import kardex4 from "../../Assets/Projects/kardex4.png";
 import pseep1 from "../../Assets/Projects/pseep1.png";
 import pseep2 from "../../Assets/Projects/pseep2.png";
-// import asuan from "../../Assets/Projects/gvi.png";
+import gvi1 from "../../Assets/Projects/gvi1.png";
+import gvi2 from "../../Assets/Projects/gvi2.png";
+import gvi3 from "../../Assets/Projects/gvi3.png";
+import gvi4 from "../../Assets/Projects/gvi4.png";
+import gvi5 from "../../Assets/Projects/gvi5.png";
 import copt1 from "../../Assets/Projects/copt1.jpg";
 import copt2 from "../../Assets/Projects/copt2.jpg";
 import copt3 from "../../Assets/Projects/copt3.jpg";
@@ -46,18 +50,17 @@ function Projects({ translations }) {
               modalImages={[pseep1, pseep2]}
             />
           </Col>
-{/* 
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={asuan}
+              imgPath={gvi1}
               isBlog={false}
-              title={translations.asuanTitle}
+              title={translations.gviTitle}
               projectTitle={translations.project}
-              description={translations.asuanDescription}
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              modalImages={[]}
+              description={translations.gviDescription}
+              modalImages={[gvi1, gvi2, gvi3, gvi4, gvi5]}
             />
-          </Col> */}
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
